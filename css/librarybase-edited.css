@@ -331,8 +331,7 @@ header.mtlibraryheader .dropdown-menu {
     right: 0 !important;
     margin: 0 auto !important;
     max-width: 1600px;
-    border: 5px solid #113e87;
-    overflow: scroll; }
+    border: 5px solid #113e87; }
 
   .mega-dropdown.open .dropdown-menu {
     opacity: 1;
