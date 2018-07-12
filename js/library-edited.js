@@ -217,7 +217,7 @@ $(document).ready(function () {
         'top': 225 + 'px'
       });
 
-    } else if ((window.innerHeight + window.scrollY) >= this.document.body.offsetHeight || window.scrollY == 0) {
+    } else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight || window.scrollY == 0) {
       $(logo).toggleClass('smaller');
       logoHasShrinked = false;
 
