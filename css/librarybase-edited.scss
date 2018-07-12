@@ -144,9 +144,8 @@ header.mtlibraryheader .dropdown-menu {
   font-size: 22px;
   color: #000000;
   font-weight: 700;
-  margin-bottom: 2rem !important;
   // NEW EDIT 2
-  margin-top: 0;
+  margin: 0 0 1rem 0;
 }
 
 .navbar-center .open>a,
@@ -865,25 +864,25 @@ table.liaisons {
 
 @media screen and (max-width: 1025px) {
   #mtsulogo {
-    max-height: 70px;
+    max-height: 65px;
   }
 }
 
 @media screen and (min-width: 827px) and (max-width: 1025px) {
   header.mtlibraryheader .dropdown-menu {
-    top: 278.5px !important;
+    top: 273.5px !important;
   }
   body {
-    padding-top: 278.5px !important;
+    padding-top: 273.5px !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 826px) {
   header.mtlibraryheader .dropdown-menu {
-    top: 272.5px !important;
+    top: 267.5px !important;
   }
   body {
-    padding-top: 272.5px !important;
+    padding-top: 267.5px !important;
   }
 }
 
