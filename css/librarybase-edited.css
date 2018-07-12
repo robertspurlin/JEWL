@@ -655,7 +655,10 @@ table.liaisons {
     max-height: 90px;
     transition: all 0.3s; }
     #mtsulogo.smaller {
-      max-height: 65px; } }
+      max-height: 65px; }
+
+  body {
+    padding-top: 250px; } }
 @media screen and (min-width: 768px) {
   .sticky {
     position: fixed;

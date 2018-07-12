@@ -850,6 +850,9 @@ table.liaisons {
       max-height: 65px;
     }
   }
+  body {
+    padding-top: 250px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -891,9 +894,6 @@ table.liaisons {
   }
 }
 
-
 .nopad {
   padding: 0;
 }
-
-

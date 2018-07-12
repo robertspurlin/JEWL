@@ -57,24 +57,29 @@ $(document).ready(function () {
 
   // Home page slider on featured buttons function
 
+  const hours = document.getElementById('hours');
+  const coursereserves = document.getElementById('coursereserves');
+  const howdoi = document.getElementById('howdoi');
+  const reserverooms = document.getElementById('reserverooms');
+
   $('.roomtrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+    if (hours && hours.style.display === 'block') {
       $('#hours').slideUp('fast');
 
       setTimeout(function () {
         $('#reserverooms').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+    } else if (coursereserves && coursereserves.style.display === 'block') {
       $('#coursereserves').slideUp('fast');
 
       setTimeout(function () {
         $('#reserverooms').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+    } else if (howdoi && howdoi.style.display === 'block') {
       $('#howdoi').slideUp('fast');
 
       setTimeout(function () {
@@ -89,21 +94,21 @@ $(document).ready(function () {
   $('.hourtrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+    if (reserverooms && reserverooms.style.display === 'block') {
       $('#reserverooms').slideUp('fast');
 
       setTimeout(function () {
         $('#hours').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+    } else if (coursereserves && coursereserves.style.display === 'block') {
       $('#coursereserves').slideUp('fast');
 
       setTimeout(function () {
         $('#hours').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+    } else if (howdoi && howdoi.style.display === 'block') {
       $('#howdoi').slideUp('fast');
 
       setTimeout(function () {
@@ -118,21 +123,21 @@ $(document).ready(function () {
   $('.coursetrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+    if (reserverooms && reserverooms.style.display === 'block') {
       $('#reserverooms').slideUp('fast');
 
       setTimeout(function () {
         $('#coursereserves').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+    } else if (hours && hours.style.display === 'block') {
       $('#hours').slideUp('fast');
 
       setTimeout(function () {
         $('#coursereserves').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+    } else if (howdoi && howdoi.style.display === 'block') {
       $('#howdoi').slideUp('fast');
 
       setTimeout(function () {
@@ -147,21 +152,21 @@ $(document).ready(function () {
   $('.howdoitrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+    if (reserverooms && reserverooms.style.display === 'block') {
       $('#reserverooms').slideUp('fast');
 
       setTimeout(function () {
         $('#howdoi').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+    } else if (hours && hours.style.display === 'block') {
       $('#hours').slideUp('fast');
 
       setTimeout(function () {
         $('#howdoi').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+    } else if (coursereserves && coursereserves.style.display === 'block') {
       $('#coursereserves').slideUp('fast');
 
       setTimeout(function () {
@@ -189,12 +194,9 @@ $(document).ready(function () {
 
   // Scroll change. To make the logo smaller on scroll and back.
 
-  // First, need to add padding to body so nothing is broken... 
-  const fullnav = document.getElementById('header');
-
-  $('body').css({
-    'padding-top': 250 + 'px'
-  });
+  // First, need to add padding to the menus so nothing is broken... 
+  // 250 is the size of the nav on all screens about 1050px width
+  // before scroll. See CSS for the rest. 
 
   $('header.mtlibraryheader .dropdown-menu').css({
     'top': 250 + 'px'
@@ -209,10 +211,6 @@ $(document).ready(function () {
       $(logo).toggleClass('smaller');
       logoHasShrinked = true;
 
-      $('body').css({
-        'padding-top': 225 + 'px'
-      });
-
       $('header.mtlibraryheader .dropdown-menu').css({
         'top': 225 + 'px'
       });
@@ -221,10 +219,6 @@ $(document).ready(function () {
       $(logo).toggleClass('smaller');
       logoHasShrinked = false;
 
-      $('body').css({
-        'padding-top': 250 + 'px'
-      });
-    
       $('header.mtlibraryheader .dropdown-menu').css({
         'top': 250 + 'px'
       });
