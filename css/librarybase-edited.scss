@@ -839,7 +839,10 @@ table.liaisons {
 
 // Class changes on scroll (making the logo smaller).
 
-@media screen and (min-width: 992px) {
+// NOTE: 1025px is when the nav switches to where search is on 
+// top of menus. 
+
+@media screen and (min-width: 1026px) {
   #mtsulogo {
     max-height: 90px;
     transition: all 0.3s;
@@ -859,24 +862,33 @@ table.liaisons {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1025px) {
   #mtsulogo {
-    max-height: 85px;
-  }
-  body {
-    padding-top: 0 !important;
+    max-height: 70px;
   }
 }
 
-@media screen and (min-width: 827px) and (max-width: 991px) {
+@media screen and (min-width: 827px) and (max-width: 1025px) {
   header.mtlibraryheader .dropdown-menu {
-    top: 293.5px !important;
+    top: 278.5px !important;
+  }
+  body {
+    padding-top: 278.5px !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 826px) {
   header.mtlibraryheader .dropdown-menu {
-    top: 287.5px !important;
+    top: 272.5px !important;
+  }
+  body {
+    padding-top: 272.5px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 0 !important;
   }
 }
 

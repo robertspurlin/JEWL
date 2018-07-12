@@ -193,11 +193,11 @@ $(document).ready(function () {
   const fullnav = document.getElementById('header');
 
   $('body').css({
-    'padding-top': 225 + 'px'
+    'padding-top': 250 + 'px'
   });
 
   $('header.mtlibraryheader .dropdown-menu').css({
-    'top': 225 + 'px'
+    'top': 250 + 'px'
   });
 
   // Now let's do the shrinking. 
