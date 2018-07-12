@@ -652,24 +652,28 @@ table.liaisons {
   padding: 100rem 0; }
 
 @media screen and (min-width: 992px) {
+  #mtsulogo {
+    max-height: 90px;
+    transition: all 0.3s; }
+    #mtsulogo.smaller {
+      max-height: 65px; } }
+@media screen and (min-width: 768px) {
   .sticky {
     position: fixed;
     top: 0;
-    width: calc(100% - 30px); }
-    .sticky #mtsulogo {
-      max-height: 90px;
-      transition: all 0.3s; }
-      .sticky #mtsulogo.smaller {
-        max-height: 65px; } }
+    width: calc(100% - 30px); } }
 @media screen and (max-width: 991px) {
   #mtsulogo {
     max-height: 85px; }
 
   body {
     padding-top: 0 !important; } }
-@media screen and (min-width: 767px) and (max-width: 1025px) {
+@media screen and (min-width: 827px) and (max-width: 991px) {
   header.mtlibraryheader .dropdown-menu {
-    top: 298.5px !important; } }
+    top: 293.5px !important; } }
+@media screen and (min-width: 768px) and (max-width: 826px) {
+  header.mtlibraryheader .dropdown-menu {
+    top: 287.5px !important; } }
 .nopad {
   padding: 0; }
 
