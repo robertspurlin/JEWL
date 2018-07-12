@@ -839,7 +839,7 @@ table.liaisons {
 
 // Class changes on scroll (making the logo smaller).
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .sticky {
     position: fixed;
     top: 0;
@@ -857,7 +857,7 @@ table.liaisons {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #mtsulogo {
     max-height: 85px;
   }
