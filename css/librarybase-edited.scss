@@ -866,6 +866,12 @@ table.liaisons {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+  header.mtlibraryheader .dropdown-menu {
+    top: 298.5px !important;
+  }
+}
+
 .nopad {
   padding: 0;
 }
