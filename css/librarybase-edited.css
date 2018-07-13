@@ -332,13 +332,13 @@ header.mtlibraryheader .dropdown-menu {
   .mega-dropdown .dropdown-menu {
     opacity: 0;
     pointer-events: none; } }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #mtsulogo {
     max-height: 65px; }
 
   body {
     padding-top: 0 !important; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .sticky {
     position: fixed;
     top: 0;
