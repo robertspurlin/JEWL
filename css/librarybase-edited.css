@@ -321,7 +321,8 @@ header.mtlibraryheader .dropdown-menu {
     left: 0 !important;
     right: 0 !important;
     margin: 0 !important;
-    min-width: 100vw;
+    width: 100vw;
+    max-width: 100%;
     border: 5px solid #113e87;
     float: none; }
 
@@ -358,9 +359,10 @@ header.mtlibraryheader .dropdown-menu {
   .bluebox {
     transition: all 0.3s; }
     .bluebox.smaller {
-      opacity: 0; }
+      opacity: 0;
+      max-height: 0; }
       .bluebox.smaller .toplinks {
-        max-height: 23px; }
+        max-height: 20px; }
     .bluebox .toplinks {
       transition: all 0.3s;
       max-height: 51px; } }
