@@ -393,11 +393,11 @@ header.mtlibraryheader .dropdown-menu {
     left: 0 !important;
     right: 0 !important;
     margin: 0 !important;
-    top: 5rem;
     min-width: 100vw;
     border: 5px solid #113e87;
     float: none;
-  } // Pretty transitions too... 
+  } 
+  // Pretty transitions too... 
   .mega-dropdown {
     &.open {
       .dropdown-menu {
@@ -416,6 +416,9 @@ header.mtlibraryheader .dropdown-menu {
   #mtsulogo {
     max-height: 65px;
   }
+  body {
+    padding-top: 0 !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -431,10 +434,6 @@ header.mtlibraryheader .dropdown-menu {
     &.smaller {
       max-height: 65px;
     }
-  }
-
-  body {
-    padding-top: 250px;
   }
 
   header.mtlibraryheader .dropdown-menu {
