@@ -194,12 +194,10 @@ $(document).ready(function () {
 
   // Scroll change. To make the logo smaller on scroll and back.
 
-  // First, need to add padding to the menus so nothing is broken... 
-  // 250 is the size of the nav on all screens about 1050px width
-  // before scroll. See CSS for the rest. 
+  // First, need to add padding to the body so nothing is broken... 
 
-  $('header.mtlibraryheader .dropdown-menu').css({
-    'top': 250 + 'px'
+  $('body').css({
+    'padding-top': $('#header').height()
   });
 
   // Now let's do the shrinking. 
@@ -209,19 +207,15 @@ $(document).ready(function () {
   window.addEventListener('scroll', function () {
     if (window.scrollY !== 0 && !logoHasShrinked) {
       $(logo).toggleClass('smaller');
+      $('.darkblue').toggleClass('smaller');
+      $('.bluebox').toggleClass('smaller');
       logoHasShrinked = true;
-
-      $('header.mtlibraryheader .dropdown-menu').css({
-        'top': 225 + 'px'
-      });
 
     } else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight || window.scrollY == 0) {
       $(logo).toggleClass('smaller');
+      $('.darkblue').toggleClass('smaller');
+      $('.bluebox').toggleClass('smaller');
       logoHasShrinked = false;
-
-      $('header.mtlibraryheader .dropdown-menu').css({
-        'top': 250 + 'px'
-      });
     }
   });
 });

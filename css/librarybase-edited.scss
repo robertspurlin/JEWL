@@ -3,7 +3,6 @@ Base CSS for all websites.
 ==============================================================================*/
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');
-
 #s-lg-public-skiplink {
   background: transparent;
   color: #fff;
@@ -143,15 +142,8 @@ header.mtlibraryheader .dropdown-menu {
 .title {
   font-size: 22px;
   color: #000000;
-  font-weight: 700;
-  // NEW EDIT 2
+  font-weight: 700; // NEW EDIT 2
   margin: 0 0 1rem 0;
-}
-
-.navbar-center .open>a,
-.navbar-center .open>a:focus,
-.navbar-center .open>a:hover {
-  background: #3d87cf !important;
 }
 
 /* Helper classes for mobile */
@@ -323,12 +315,6 @@ header.mtlibraryheader .dropdown-menu {
   }
 }
 
-@media screen and (min-width: 1401px) {
-  li.dropdown.mega-dropdown {
-    position: relative !important;
-  }
-}
-
 @media screen and (max-width: 1246px) and (min-width: 768px) {
   #navbarmenu,
   .darkblue .padding {
@@ -397,25 +383,21 @@ header.mtlibraryheader .dropdown-menu {
 }
 
 // NEW EDIT 1 BEGIN:
-
 // To make 100% width menus. 
-
 @media screen and (min-width: 767px) {
   header.mtlibraryheader .dropdown-menu {
-    position: fixed;
     display: block !important;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s;
     left: 0 !important;
     right: 0 !important;
-    margin: 0 auto !important;
-    max-width: 1600px;
+    margin: 0 !important;
+    top: 5rem;
+    min-width: 100vw;
     border: 5px solid #113e87;
-  }
-
-  // Pretty transitions too... 
-
+    float: none;
+  } // Pretty transitions too... 
   .mega-dropdown {
     &.open {
       .dropdown-menu {
@@ -430,9 +412,74 @@ header.mtlibraryheader .dropdown-menu {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #mtsulogo {
+    max-height: 65px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 30px);
+  }
+
+  #mtsulogo {
+    max-height: 90px;
+    transition: all 0.3s;
+    &.smaller {
+      max-height: 65px;
+    }
+  }
+
+  body {
+    padding-top: 250px;
+  }
+
+  header.mtlibraryheader .dropdown-menu {
+    top: 5rem;
+  }
+
+  .darkblue.smaller {
+    padding: 0.4rem 0;
+  }
+
+  .bluebox {
+    transition: all 0.3s;
+    &.smaller {
+      opacity: 0;
+
+      .toplinks {
+        max-height: 23px;
+      }
+    }
+    .toplinks {
+      transition: all 0.3s;
+      max-height: 51px;
+    }
+  }
+}
+
+@media screen and (min-width: 827px) and (max-width: 1025px) {
+  header.mtlibraryheader .dropdown-menu {
+      top: 98.5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 826px) {
+  header.mtlibraryheader .dropdown-menu {
+      top: 92.5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 0 !important;
+  }
+}
 
 // To center lists and limit their widths. 
-
 .list_unstyled li {
   &:not(.superheader) {
     max-width: 350px;
@@ -445,17 +492,21 @@ header.mtlibraryheader .dropdown-menu {
 }
 
 // A11y: Change hovers of buttons: more contrast. 
-
 .navbar-center>li>a {
   transition: all 0.3s;
 }
 
-.navbar-center>li>a:hover, .navbar-center .open > a, .navbar-center .open > a:focus, .navbar-center .open > a:hover, .navbar-center .open > a, .navbar-center .open > a:focus, .navbar-center .open > a:hover {
+.navbar-center>li>a:hover,
+.navbar-center .open>a,
+.navbar-center .open>a:focus,
+.navbar-center .open>a:hover,
+.navbar-center .open>a,
+.navbar-center .open>a:focus,
+.navbar-center .open>a:hover {
   background: #113e87 !important;
 }
 
 // NEW EDIT 1 END.
-
 .navbar-menu .nav li {
   vertical-align: inherit;
 }
@@ -518,6 +569,7 @@ header.mtlibraryheader .dropdown-menu {
   color: white;
   margin-top: 1.5rem;
   margin-bottom: -1rem;
+  transition: all 0.3s;
 }
 
 .darkblue .padding {
@@ -765,9 +817,7 @@ table.liaisons {
   display: inline-block;
 }
 
-
 // The css for the slider containers, optional for internal pages.
-
 .slider-container .s-lib-box-std {
   padding: 0;
   margin: 2rem 0;
@@ -828,70 +878,8 @@ table.liaisons {
   margin: 0;
 }
 
-// NEW EDITS 3: Prototype sticky nav.  
-
-// Add padding to give scrolling effect, for testing. 
-
 .paddingtest {
   padding: 100rem 0;
-}
-
-// Class changes on scroll (making the logo smaller).
-
-// NOTE: 1025px is when the nav switches to where search is on 
-// top of menus. 
-
-@media screen and (min-width: 1026px) {
-  #mtsulogo {
-    max-height: 90px;
-    transition: all 0.3s;
-
-    &.smaller {
-      max-height: 65px;
-    }
-  }
-  body {
-    padding-top: 250px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: calc(100% - 30px);
-  }
-}
-
-
-@media screen and (max-width: 1025px) {
-  #mtsulogo {
-    max-height: 65px;
-  }
-}
-
-@media screen and (min-width: 827px) and (max-width: 1025px) {
-  header.mtlibraryheader .dropdown-menu {
-    top: 273.5px !important;
-  }
-  body {
-    padding-top: 273.5px !important;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 826px) {
-  header.mtlibraryheader .dropdown-menu {
-    top: 267.5px !important;
-  }
-  body {
-    padding-top: 267.5px !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 0 !important;
-  }
 }
 
 .nopad {

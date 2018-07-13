@@ -120,11 +120,6 @@ header.mtlibraryheader .dropdown-menu {
   font-weight: 700;
   margin: 0 0 1rem 0; }
 
-.navbar-center .open > a,
-.navbar-center .open > a:focus,
-.navbar-center .open > a:hover {
-  background: #3d87cf !important; }
-
 /* Helper classes for mobile */
 @media screen and (max-width: 767px) {
   .mobilehide {
@@ -260,9 +255,6 @@ header.mtlibraryheader .dropdown-menu {
   #navbarmenu,
   .darkblue .padding {
     padding: 0 10rem; } }
-@media screen and (min-width: 1401px) {
-  li.dropdown.mega-dropdown {
-    position: relative !important; } }
 @media screen and (max-width: 1246px) and (min-width: 768px) {
   #navbarmenu,
   .darkblue .padding {
@@ -322,16 +314,17 @@ header.mtlibraryheader .dropdown-menu {
     left: 0 !important; } }
 @media screen and (min-width: 767px) {
   header.mtlibraryheader .dropdown-menu {
-    position: fixed;
     display: block !important;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s;
     left: 0 !important;
     right: 0 !important;
-    margin: 0 auto !important;
-    max-width: 1600px;
-    border: 5px solid #113e87; }
+    margin: 0 !important;
+    top: 5rem;
+    min-width: 100vw;
+    border: 5px solid #113e87;
+    float: none; }
 
   .mega-dropdown.open .dropdown-menu {
     opacity: 1;
@@ -339,6 +332,48 @@ header.mtlibraryheader .dropdown-menu {
   .mega-dropdown .dropdown-menu {
     opacity: 0;
     pointer-events: none; } }
+@media screen and (max-width: 767px) {
+  #mtsulogo {
+    max-height: 65px; } }
+@media screen and (min-width: 768px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 30px); }
+
+  #mtsulogo {
+    max-height: 90px;
+    transition: all 0.3s; }
+    #mtsulogo.smaller {
+      max-height: 65px; }
+
+  body {
+    padding-top: 250px; }
+
+  header.mtlibraryheader .dropdown-menu {
+    top: 5rem; }
+
+  .darkblue.smaller {
+    padding: 0.4rem 0; }
+
+  .bluebox {
+    transition: all 0.3s; }
+    .bluebox.smaller {
+      opacity: 0; }
+      .bluebox.smaller .toplinks {
+        max-height: 23px; }
+    .bluebox .toplinks {
+      transition: all 0.3s;
+      max-height: 51px; } }
+@media screen and (min-width: 827px) and (max-width: 1025px) {
+  header.mtlibraryheader .dropdown-menu {
+    top: 98.5px; } }
+@media screen and (min-width: 768px) and (max-width: 826px) {
+  header.mtlibraryheader .dropdown-menu {
+    top: 92.5px; } }
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 0 !important; } }
 .list_unstyled li {
   margin: 0 auto 15px auto !important;
   font-size: 16px; }
@@ -350,7 +385,13 @@ header.mtlibraryheader .dropdown-menu {
 .navbar-center > li > a {
   transition: all 0.3s; }
 
-.navbar-center > li > a:hover, .navbar-center .open > a, .navbar-center .open > a:focus, .navbar-center .open > a:hover, .navbar-center .open > a, .navbar-center .open > a:focus, .navbar-center .open > a:hover {
+.navbar-center > li > a:hover,
+.navbar-center .open > a,
+.navbar-center .open > a:focus,
+.navbar-center .open > a:hover,
+.navbar-center .open > a,
+.navbar-center .open > a:focus,
+.navbar-center .open > a:hover {
   background: #113e87 !important; }
 
 .navbar-menu .nav li {
@@ -401,7 +442,8 @@ header.mtlibraryheader .dropdown-menu {
   background: #113e87;
   color: white;
   margin-top: 1.5rem;
-  margin-bottom: -1rem; }
+  margin-bottom: -1rem;
+  transition: all 0.3s; }
 
 .darkblue .padding {
   max-width: 1600px;
@@ -650,38 +692,6 @@ table.liaisons {
 .paddingtest {
   padding: 100rem 0; }
 
-@media screen and (min-width: 1026px) {
-  #mtsulogo {
-    max-height: 90px;
-    transition: all 0.3s; }
-    #mtsulogo.smaller {
-      max-height: 65px; }
-
-  body {
-    padding-top: 250px; } }
-@media screen and (min-width: 768px) {
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: calc(100% - 30px); } }
-@media screen and (max-width: 1025px) {
-  #mtsulogo {
-    max-height: 65px; } }
-@media screen and (min-width: 827px) and (max-width: 1025px) {
-  header.mtlibraryheader .dropdown-menu {
-    top: 273.5px !important; }
-
-  body {
-    padding-top: 273.5px !important; } }
-@media screen and (min-width: 768px) and (max-width: 826px) {
-  header.mtlibraryheader .dropdown-menu {
-    top: 267.5px !important; }
-
-  body {
-    padding-top: 267.5px !important; } }
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 0 !important; } }
 .nopad {
   padding: 0; }
 
