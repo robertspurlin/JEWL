@@ -321,7 +321,7 @@ header.mtlibraryheader .dropdown-menu {
     left: 0 !important;
     right: 0 !important;
     margin: 0 auto !important;
-    width: calc(100vw - 20rem);
+    width: calc(100% - 20rem);
     max-width: calc(1600px - 20rem);
     border: 5px solid #113e87;
     float: none; }
