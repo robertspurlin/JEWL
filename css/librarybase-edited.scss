@@ -420,12 +420,12 @@ header.mtlibraryheader .dropdown-menu {
   }
 }
 
-@media screen and (max-width: 767px) {
-  #mtsulogo {
-    max-height: 65px;
-  }
+@media screen and (max-width: 1024px) {
   body {
     padding-top: 0 !important;
+  }
+  #mtsulogo {
+    max-height: 65px;
   }
 }
 

@@ -336,12 +336,12 @@ header.mtlibraryheader .dropdown-menu {
   header.mtlibraryheader .dropdown-menu {
     max-width: 100%;
     width: 100%; } }
-@media screen and (max-width: 767px) {
-  #mtsulogo {
-    max-height: 65px; }
-
+@media screen and (max-width: 1024px) {
   body {
-    padding-top: 0 !important; } }
+    padding-top: 0 !important; }
+
+  #mtsulogo {
+    max-height: 65px; } }
 @media screen and (min-width: 1025px) {
   .sticky {
     position: fixed;
