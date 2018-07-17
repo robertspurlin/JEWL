@@ -320,9 +320,9 @@ header.mtlibraryheader .dropdown-menu {
     transition: all 0.3s;
     left: 0 !important;
     right: 0 !important;
-    margin: 0 !important;
-    width: 100vw;
-    max-width: 100%;
+    margin: 0 auto !important;
+    width: calc(100vw - 20rem);
+    max-width: calc(1600px - 20rem);
     border: 5px solid #113e87;
     float: none; }
 
@@ -332,7 +332,11 @@ header.mtlibraryheader .dropdown-menu {
   .mega-dropdown .dropdown-menu {
     opacity: 0;
     pointer-events: none; } }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1246px) {
+  header.mtlibraryheader .dropdown-menu {
+    max-width: 100%;
+    width: 100%; } }
+@media screen and (max-width: 767px) {
   #mtsulogo {
     max-height: 65px; }
 
